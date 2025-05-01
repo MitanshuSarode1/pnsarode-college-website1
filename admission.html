@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission - P.N. Sarode Mahila Mahavidyalaya</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        :root {
+            --nav-bg: #2B3B4E;
+        }
+        
+        .navbar {
+            background-color: var(--nav-bg) !important;
+            padding: 0;
+            min-height: 60px;
+        }
+        
+        .nav-link {
+            color: white !important;
+            font-weight: 500;
+            padding: 20px 15px !important;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-link:hover, .nav-link.active {
+            background-color: rgba(255, 255, 255, 0.1);
+            color: white !important;
+        }
+        
+        .dropdown-menu {
+            background-color: var(--nav-bg);
+            border: none;
+            border-radius: 0;
+            margin-top: 0;
+            padding: 0;
+        }
+        
+        .dropdown-item {
+            color: white;
+            padding: 12px 20px;
+            transition: all 0.3s ease;
+        }
+        
+        .dropdown-item:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+            color: white;
+        }
+        
+        @media (max-width: 991px) {
+            .navbar-collapse {
+                background-color: var(--nav-bg);
+                padding: 10px 0;
+            }
+            
+            .nav-link {
+                padding: 12px 15px !important;
+            }
+            
+            .dropdown-menu {
+                background-color: rgba(0, 0, 0, 0.1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/Logo.jpg" alt="College Logo" height="60">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Courses</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="courses.html#ba">B.A.</a></li>
+                            <li><a class="dropdown-item" href="courses.html#bcom">B.Com.</a></li>
+                            <li><a class="dropdown-item" href="courses.html#bsc">B.Sc.</a></li>
+                            <li><a class="dropdown-item" href="courses.html#bsc-cls">B.Sc. Community Lab Science</a></li>
+                            <li><a class="dropdown-item" href="courses.html#ba-fd">B.A. Fashion Design</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link active" href="admission.html">Admission</a></li>
+                    <li class="nav-item"><a class="nav-link" href="affiliation.html">Affiliation Letters</a></li>
+                    <li class="nav-item"><a class="nav-link" href="facilities.html">Facilities</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Admission Hero Section -->
+    <section class="admission-hero py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1 class="section-title">Admission Process</h1>
+                    <p class="lead">Join Our Community of Empowered Women</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Admission Process -->
+    <section class="admission-process py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">How to Apply</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <div class="process-number">1</div>
+                            <h4 class="card-title">Check Eligibility</h4>
+                            <p class="card-text">Review the eligibility criteria for your desired course and ensure you meet all requirements.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <div class="process-number">2</div>
+                            <h4 class="card-title">Submit Application</h4>
+                            <p class="card-text">Fill out the online application form and submit required documents.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <div class="process-number">3</div>
+                            <h4 class="card-title">Complete Admission</h4>
+                            <p class="card-text">Pay the admission fees and complete the enrollment process.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Eligibility Criteria -->
+    <section class="eligibility py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Eligibility Criteria</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h4 class="card-title">For All Undergraduate Programs</h4>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-check-circle text-primary me-2"></i> Passed 10+2 or equivalent examination</li>
+                                <li><i class="fas fa-check-circle text-primary me-2"></i> Minimum 45% marks in qualifying examination</li>
+                                <li><i class="fas fa-check-circle text-primary me-2"></i> Valid government-issued ID proof</li>
+                                <li><i class="fas fa-check-circle text-primary me-2"></i> Recent passport-size photographs</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h4 class="card-title">Additional Requirements</h4>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-check-circle text-primary me-2"></i> Transfer Certificate from previous institution</li>
+                                <li><i class="fas fa-check-circle text-primary me-2"></i> Character Certificate</li>
+                                <li><i class="fas fa-check-circle text-primary me-2"></i> Migration Certificate (if applicable)</li>
+                                <li><i class="fas fa-check-circle text-primary me-2"></i> Caste Certificate (if applicable)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fee Structure -->
+    <section class="fee-structure py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Fee Structure</h2>
+            <div class="table-responsive">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Course</th>
+                            <th>Duration</th>
+                            <th>Annual Tuition Fee</th>
+                            <th>Other Charges</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>B.A.</td>
+                            <td>3 Years</td>
+                            <td>₹15,000</td>
+                            <td>₹5,000</td>
+                        </tr>
+                        <tr>
+                            <td>B.Com.</td>
+                            <td>3 Years</td>
+                            <td>₹18,000</td>
+                            <td>₹5,000</td>
+                        </tr>
+                        <tr>
+                            <td>B.Sc.</td>
+                            <td>3 Years</td>
+                            <td>₹25,000</td>
+                            <td>₹7,000</td>
+                        </tr>
+                        <tr>
+                            <td>B.Sc. Community Lab Science</td>
+                            <td>3 Years</td>
+                            <td>₹30,000</td>
+                            <td>₹10,000</td>
+                        </tr>
+                        <tr>
+                            <td>B.A. Fashion Design</td>
+                            <td>3 Years</td>
+                            <td>₹35,000</td>
+                            <td>₹12,000</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="text-center mt-4">
+                <p class="text-muted">* Fees are subject to change. Please contact the admission office for the latest fee structure.</p>
+                <a href="contact.html" class="btn btn-primary">Contact Admission Office</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scholarships -->
+    <section class="scholarships py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Available Scholarships</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h4 class="card-title">Merit Scholarship</h4>
+                            <p class="card-text">Awarded to students with outstanding academic performance in their qualifying examination.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h4 class="card-title">Sports Scholarship</h4>
+                            <p class="card-text">Available for students who have represented at state or national level in sports.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h4 class="card-title">Need-based Scholarship</h4>
+                            <p class="card-text">Financial assistance for economically disadvantaged students.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (same as index.html) -->
+    <footer class="footer py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <img src="images/Logo.jpg" alt="College Logo" height="60" class="mb-3">
+                    <p>AISHE Code: C-66254</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="admission.html">Admission</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Connect With Us</h5>
+                    <div class="social-links">
+                        <a href="#" class="me-2"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="me-2"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-12 text-center">
+                    <p class="copyright">&copy; 2024 P.N. Sarode Mahila Mahavidyalaya. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html> 

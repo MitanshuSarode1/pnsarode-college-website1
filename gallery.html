@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - P.N. Sarode Mahila Mahavidyalaya</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightbox2@2.11.3/dist/css/lightbox.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        :root {
+            --nav-bg: #2B3B4E;
+        }
+        
+        .navbar {
+            background-color: var(--nav-bg) !important;
+            padding: 0;
+            min-height: 60px;
+        }
+        
+        .nav-link {
+            color: white !important;
+            font-weight: 500;
+            padding: 20px 15px !important;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-link:hover, .nav-link.active {
+            background-color: rgba(255, 255, 255, 0.1);
+            color: white !important;
+        }
+        
+        .dropdown-menu {
+            background-color: var(--nav-bg);
+            border: none;
+            border-radius: 0;
+            margin-top: 0;
+            padding: 0;
+        }
+        
+        .dropdown-item {
+            color: white;
+            padding: 12px 20px;
+            transition: all 0.3s ease;
+        }
+        
+        .dropdown-item:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+            color: white;
+        }
+        
+        @media (max-width: 991px) {
+            .navbar-collapse {
+                background-color: var(--nav-bg);
+                padding: 10px 0;
+            }
+            
+            .nav-link {
+                padding: 12px 15px !important;
+            }
+            
+            .dropdown-menu {
+                background-color: rgba(0, 0, 0, 0.1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/Logo.jpg" alt="College Logo" height="60">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Courses</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="courses.html#ba">B.A.</a></li>
+                            <li><a class="dropdown-item" href="courses.html#bcom">B.Com.</a></li>
+                            <li><a class="dropdown-item" href="courses.html#bsc">B.Sc.</a></li>
+                            <li><a class="dropdown-item" href="courses.html#bsc-cls">B.Sc. Community Lab Science</a></li>
+                            <li><a class="dropdown-item" href="courses.html#ba-fd">B.A. Fashion Design</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="admission.html">Admission</a></li>
+                    <li class="nav-item"><a class="nav-link" href="affiliation.html">Affiliation Letters</a></li>
+                    <li class="nav-item"><a class="nav-link" href="facilities.html">Facilities</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Gallery Hero Section -->
+    <section class="gallery-hero py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1 class="section-title">College Gallery</h1>
+                    <p class="lead">Capturing Moments of Excellence and Achievement</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Filter -->
+    <section class="gallery-filter py-4">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <ul class="nav nav-pills justify-content-center" id="galleryFilter">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#" data-filter="all">All</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-filter="events">Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-filter="academic">Academic</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-filter="sports">Sports</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-filter="cultural">Cultural</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section class="gallery-grid py-5">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Event 1 -->
+                <div class="col-md-4 col-sm-6 gallery-item" data-category="events">
+                    <div class="card">
+                        <a href="images/dances.jpg" data-lightbox="gallery" data-title="Annual College Day Celebration">
+                            <img src="images/dances.jpg" class="card-img-top" alt="Annual College Day">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Annual College Day</h5>
+                            <p class="card-text">Celebrating achievements and talents of our students</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event 2 -->
+                <div class="col-md-4 col-sm-6 gallery-item" data-category="academic">
+                    <div class="card">
+                        <a href="images/photo1.jpg" data-lightbox="gallery" data-title="Science Exhibition">
+                            <img src="images/photo1.jpg" class="card-img-top" alt="Science Exhibition">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Science Exhibition</h5>
+                            <p class="card-text">Showcasing innovative projects by science students</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event 3 -->
+                <div class="col-md-4 col-sm-6 gallery-item" data-category="cultural">
+                    <div class="card">
+                        <a href="images/cal.jpg" data-lightbox="gallery" data-title="Cultural Festival">
+                            <img src="images/cal.jpg" class="card-img-top" alt="Cultural Festival">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Cultural Festival</h5>
+                            <p class="card-text">Traditional dance and music performances</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event 4 -->
+                <div class="col-md-4 col-sm-6 gallery-item" data-category="sports">
+                    <div class="card">
+                        <a href="images/photo3.jpg" data-lightbox="gallery" data-title="Sports Day">
+                            <img src="images/photo3.jpg" class="card-img-top" alt="Sports Day">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Sports Day</h5>
+                            <p class="card-text">Annual sports competition and awards ceremony</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event 5 -->
+                <div class="col-md-4 col-sm-6 gallery-item" data-category="academic">
+                    <div class="card">
+                        <a href="images/aaba.jpg" data-lightbox="gallery" data-title="Workshop on Career Development">
+                            <img src="images/aaba.jpg" class="card-img-top" alt="Career Workshop">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Career Workshop</h5>
+                            <p class="card-text">Expert session on career opportunities</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event 6 -->
+                <div class="col-md-4 col-sm-6 gallery-item" data-category="events">
+                    <div class="card">
+                        <a href="images/png1.jpg" data-lightbox="gallery" data-title="Freshers' Welcome">
+                            <img src="images/png1.jpg" class="card-img-top" alt="Freshers' Welcome">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Freshers' Welcome</h5>
+                            <p class="card-text">Welcoming new students to the college</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (same as index.html) -->
+    <footer class="footer py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <img src="images/Logo.jpg" alt="College Logo" height="60" class="mb-3">
+                    <p>AISHE Code: C-66254</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="admission.html">Admission</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Connect With Us</h5>
+                    <div class="social-links">
+                        <a href="#" class="me-2"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="me-2"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-12 text-center">
+                    <p class="copyright">&copy; 2024 P.N. Sarode Mahila Mahavidyalaya. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lightbox2@2.11.3/dist/js/lightbox.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        // Gallery filter functionality
+        document.querySelectorAll('#galleryFilter .nav-link').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                // Update active state
+                document.querySelectorAll('#galleryFilter .nav-link').forEach(l => l.classList.remove('active'));
+                this.classList.add('active');
+                
+                const filter = this.getAttribute('data-filter');
+                
+                // Filter gallery items
+                document.querySelectorAll('.gallery-item').forEach(item => {
+                    if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html> 
